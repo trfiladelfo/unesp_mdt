@@ -34,7 +34,7 @@ Once installed MDT perform the following steps:
 4. Add user for root group
 
     <code>
-        sudo usermod -aG users <username>
+        sudo usermod -aG users < name_username >
     </ode>
 
 5. Enabled usb for device (Example: Tiva)
