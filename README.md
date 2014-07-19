@@ -112,7 +112,7 @@ Once installed MDT perform the following steps:
     
     Change Name for example to "Upload", Location to the place where lm4flash is (we installed it to ".../lm4tools/lm4flash/lm4flash" under your home), Working Directory to "${workspace_loc:/Template/Debug}" or "${workspace_loc:/Template/Release}" (Release or Debug directory of your project) and Arguments to "Template.bin" (the binary file we want to flash):
     
-    ![Screenshot]((http://i.imgur.com/62VIfj0.png)
+    ![Screenshot](http://i.imgur.com/62VIfj0.png)
     
     Click in Run, now been transferred to the device
    
