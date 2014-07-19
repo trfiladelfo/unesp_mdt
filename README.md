@@ -20,7 +20,7 @@ Once installed MDT perform the following steps:
 2. Add repository GCC for Arm Embedded
 
     <code>
-        sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded && sudo apt-get update sudo apt-get install gcc-arm-none-eabi
+        sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded && sudo apt-get update && sudo apt-get install gcc-arm-none-eabi
     </code>
 
 
