@@ -1,0 +1,28 @@
+19:11:21 **** Clean-only build of configuration Debug for project Template ****
+make clean 
+rm -rf  ./src/blinky.o ./src/startup_gcc.o  ./src/blinky.d ./src/startup_gcc.d  Template.elf
+ 
+19:11:21 **** Build of configuration Debug for project Template ****
+make all 
+Building file: ../src/blinky.c
+Invoking: Cross GCC Compiler
+arm-none-eabi-gcc -DPART_LM4F120H5QR -DARM_MATH_CM4 -DTARGET_IS_BLIZZARD_RA1 -I/home/unesp/Projects/unesp_mdt/boards/SW-TM4C-2.0.1.11577 -O0 -g3 -Wall -c -fmessage-length=0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -ffunction-sections -fdata-sections -MMD -MP -MF"src/blinky.d" -MT"src/blinky.d" -o "src/blinky.o" "../src/blinky.c"
+Finished building: ../src/blinky.c
+ 
+Building file: ../src/startup_gcc.c
+Invoking: Cross GCC Compiler
+arm-none-eabi-gcc -DPART_LM4F120H5QR -DARM_MATH_CM4 -DTARGET_IS_BLIZZARD_RA1 -I/home/unesp/Projects/unesp_mdt/boards/SW-TM4C-2.0.1.11577 -O0 -g3 -Wall -c -fmessage-length=0 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -ffunction-sections -fdata-sections -MMD -MP -MF"src/startup_gcc.d" -MT"src/startup_gcc.d" -o "src/startup_gcc.o" "../src/startup_gcc.c"
+Finished building: ../src/startup_gcc.c
+ 
+Building target: Template.elf
+Invoking: Cross GCC Linker
+arm-none-eabi-gcc -L/home/unesp/Projects/unesp_mdt/boards/SW-TM4C123GXL/driverlib -Wl,--static,--gc-sections,-T ../def/project.ld -mthumb -mcpu=cortex-m4 -lm -lc -o "Template.elf"  ./src/blinky.o ./src/startup_gcc.o   
+Finished building target: Template.elf
+ 
+make --no-print-directory post-build
+Generate binary file from elf file
+arm-none-eabi-objcopy -O binary Template.elf Template.bin
+ 
+19:12:28 **** Incremental Build of configuration Debug for project Template ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,73 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Built-By: genie.tools.linuxtools
+Bundle-SymbolicName: org.eclipse.linuxtools.oprofile.core;singleton:=t
+ rue
+Bundle-Activator: org.eclipse.linuxtools.internal.oprofile.core.Oprofi
+ leCorePlugin
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.4.0",org.ec
+ lipse.ui;bundle-version="3.4.0",org.eclipse.linuxtools.tools.launch.c
+ ore,org.eclipse.linuxtools.profiling.launch;bundle-version="0.9.0",or
+ g.eclipse.core.filesystem;bundle-version="1.3.100"
+Bundle-Version: 2.1.1.201402102340
+Export-Package: org.eclipse.linuxtools.internal.oprofile.core,org.ecli
+ pse.linuxtools.internal.oprofile.core.daemon,org.eclipse.linuxtools.i
+ nternal.oprofile.core.linux,org.eclipse.linuxtools.internal.oprofile.
+ core.model,org.eclipse.linuxtools.internal.oprofile.core.opxml,org.ec
+ lipse.linuxtools.internal.oprofile.core.opxml.checkevent,org.eclipse.
+ linuxtools.internal.oprofile.core.opxml.info,org.eclipse.linuxtools.i
+ nternal.oprofile.core.opxml.modeldata,org.eclipse.linuxtools.internal
+ .oprofile.core.opxml.sessions
+Build-Jdk: 1.7.0_25
+Bundle-ClassPath: oprofile-core.jar
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %bundleProvider
+Bundle-Name: %bundleName
+Eclipse-BundleShape: dir
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Import-Package: org.eclipse.core.resources
+Bundle-ManifestVersion: 2
+
+Name: natives/linux/scripts/org.eclipse.linuxtools.oprofile.policy
+SHA1-Digest: uRTwQffrRvZT5Zie7RF8794Mhbo=
+
+Name: natives/linux/scripts/install-noconsolehelper.sh
+SHA1-Digest: GS9FPyoLq6NlWhM1naKkyc9QfWg=
+
+Name: op_error_key
+SHA1-Digest: E/K4saW4FCflxHzA2E1z94OBRj8=
+
+Name: META-INF/maven/org.eclipse.linuxtools.oprofile/org.eclipse.linux
+ tools.oprofile.core/pom.properties
+SHA1-Digest: VFkHo+0may0qMQ62Anxq3YM7sR4=
+
+Name: about.html
+SHA1-Digest: sAXgWZYB7tT9O9w6pl6VraWFVhk=
+
+Name: plugin.properties
+SHA1-Digest: s2wCfu0/rJCPLnyLmMXue8VV5Sg=
+
+Name: README
+SHA1-Digest: ZcRwpozsi84fxMsGFUNeVP7e1Sg=
+
+Name: natives/linux/scripts/uninstall.sh
+SHA1-Digest: JajG1BFRBIjcpG0fKyWmSdt8pP4=
+
+Name: plugin.xml
+SHA1-Digest: 23otGKV8OKHbWM2Vrine/VpIM4A=
+
+Name: natives/linux/scripts/install.sh
+SHA1-Digest: mJCQfbgngft+RymCTS7nRAx8WG0=
+
+Name: META-INF/maven/org.eclipse.linuxtools.oprofile/org.eclipse.linux
+ tools.oprofile.core/pom.xml
+SHA1-Digest: Y7yBraejz+WxiNfpDaMhzHOQX0s=
+
+Name: oprofile-core.jar
+SHA1-Digest: eDepC9XNnmQxNB9fR2o4QR0AJr4=
+
+Name: natives/linux/scripts/uninstall-noconsolehelper.sh
+SHA1-Digest: pvglllMZ9PdV+wiJPQTjVMYSMRQ=
+

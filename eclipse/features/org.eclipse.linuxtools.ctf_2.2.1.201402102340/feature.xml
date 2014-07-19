@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.linuxtools.ctf"
+      label="%featureName"
+      version="2.2.1.201402102340"
+      provider-name="%featureProvider">
+
+   <description url="http://www.example.com/description">
+      %description
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="Linux Tools Update Site" url="http://download.eclipse.org/linuxtools/update"/>
+   </url>
+
+   <requires>
+      <import plugin="org.antlr.runtime" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.linuxtools.ctf.parser"
+         download-size="130"
+         install-size="278"
+         version="1.2.1.201402102340"/>
+
+   <plugin
+         id="org.eclipse.linuxtools.ctf.core"
+         download-size="122"
+         install-size="260"
+         version="2.2.1.201402102340"
+         unpack="false"/>
+
+</feature>
