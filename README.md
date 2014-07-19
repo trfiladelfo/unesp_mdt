@@ -90,7 +90,34 @@ Once installed MDT perform the following steps:
     
     ![Screenshot](http://i.imgur.com/LYK9KQN.png)
     
-    6.12 That was a long configuration, but when you click Finish, the project will be ready. You might need to advance to the next step before the Finish button becomes enabled. If that's the case, click the Next > button to advance to the next step, enter "arm-none-eabi-" in the Cross compiler prefix text box, and finally click Finish. If Eclipse asks you if it should open the C/C++ perspective, say yes. Also, if it's still opened, close the Welcome tab.
+    6.12 That was a long configuration, but when you click Finish, the project will be ready. You might need to advance to the next step before the Finish button becomes enabled. If that's the case, click the Next > button to advance to the next step, enter "arm-none-eabi-" in the Cross compiler prefix text box, and finally click Finish.
    ![Screenshot](http://i.imgur.com/vBGn0V2.png)
    
-   7.0 
+   7.0 Compile programs
+  
+    Right Click Project, then click Build Project 
+    ![Screenshot](http://i.imgur.com/iGylkcB.png)
+    
+    Result
+    ![Screenshot](http://i.imgur.com/zff1Trl.png)
+  
+  
+   8.0 Flashing programs
+    
+    Click Run/External Tools/External Tools Configurations...:
+    ![Screenshot](http://i.imgur.com/vp0O6po.png)
+    
+    Right click Program, then click New:
+    [Imgur](http://i.imgur.com/Tl9VbOJ.png)
+    
+    Change Name for example to "Upload", Location to the place where lm4flash is (we installed it to ".../lm4tools/lm4flash/lm4flash" under your home), Working Directory to "${workspace_loc:/Template/Debug}" or "${workspace_loc:/Template/Release}" (Release or Debug directory of your project) and Arguments to "Template.bin" (the binary file we want to flash):
+    ![Screenshot]((http://i.imgur.com/62VIfj0.png)
+    
+    Click in Run, now been transferred to the device
+    ![Screenshot](http://i.imgur.com/53nrfN7.png)
+    
+    
+    Now just use your imagination and good codes.
+    Url to download the installers: http://goo.gl/a1kHU2
+    
+    Thanks.
