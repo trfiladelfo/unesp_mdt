@@ -46,6 +46,8 @@ Once installed MDT perform the following steps:
 6. Configuration Eclipse
 
     6.1 Launch Eclipse, You'll be asked to select a directory for the workspace. Select workspace directory, under your home (/home/<user>/ in my PC): 
+    
+    ![Screenshot](http://i.imgur.com/oIhIabP.png?1) 
 
 7. 
 
