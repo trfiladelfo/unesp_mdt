@@ -48,6 +48,16 @@ Once installed MDT perform the following steps:
     6.1 Launch Eclipse, You'll be asked to select a directory for the workspace. Select workspace directory, under your home (/home/<user>/ in my PC): 
     
     ![Screenshot](http://i.imgur.com/oIhIabP.png?1) 
+    
+    6.2 Click in File -> New -> C Project, enter your information:
+     
+     6.2.1 Select Project Type: Empty Project
+     
+     6.2.2 Select Toolchains: Cross GCC
+    
+    ![Screenshot](http://i.imgur.com/fDCn8Tj.png)
+    
+    
 
 7. 
 
