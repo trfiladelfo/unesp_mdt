@@ -47,17 +47,23 @@ Once installed MDT perform the following steps:
 
     6.1 Launch Eclipse, You'll be asked to select a directory for the workspace. Select workspace directory, under your home (/home/<user>/ in my PC): 
     
-    ![Screenshot](http://i.imgur.com/oIhIabP.png?1) 
+    ![Screenshot](http://i.imgur.com/oIhIabP.png) 
     
     6.2 Click in File -> New -> C Project, enter your information:
      
-     6.2.1 Select Project Type: Empty Project
+        6.2.1 Select Project Type: Empty Project;
      
-     6.2.2 Select Toolchains: Cross GCC
+        6.2.2 Select Toolchains: Cross GCC and click Next.
     
     ![Screenshot](http://i.imgur.com/fDCn8Tj.png)
     
+    6.3 Now click in Advanced Settings
     
+    ![Screenshot](http://i.imgur.com/Ltj5NSE.png)
+    
+    6.4 Select C/C++ Build/Settings in the tree. In the Configuration combo box, select [ All configurations ]. Make sure you keep [ All configurations ] selected for all the following steps, until number 14. In the Tool Settings tab, in the Cross Settings section write "arm-none-eabi-" into the Prefix text box and Path write "/usr/lib/arm-none-eabi":
+    
+   ![Screenshot](http://i.imgur.com/Zpqj6c6.png)
 
 7. 
 
