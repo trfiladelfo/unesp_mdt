@@ -28,7 +28,9 @@ Once installed MDT perform the following steps:
 
     <code>
         git submodule foreach git pull
+        
         cd lm4tools/lm4flash
+        
         sudo cp lm4tools/lm4flash/lm4flash /usr/bin/
     </code>
     
