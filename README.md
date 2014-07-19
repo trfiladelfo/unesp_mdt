@@ -61,13 +61,36 @@ Once installed MDT perform the following steps:
     
     ![Screenshot](http://i.imgur.com/Ltj5NSE.png)
     
-    6.4 Select C/C++ Build/Settings in the tree. In the Configuration combo box, select [ All configurations ]. Make sure you keep [ All configurations ] selected for all the following steps, until number 14. In the Tool Settings tab, in the Cross Settings section write "arm-none-eabi-" into the Prefix text box and Path write "/usr/lib/arm-none-eabi":
+    6.4 Select C/C++ Build/Settings in the tree. In the Configuration combo box, select [ All configurations ]. Make sure you keep [ All configurations ] selected for all the following steps. In the Tool Settings tab, in the Cross Settings section write "arm-none-eabi-" into the Prefix text box and Path write "/usr/lib/arm-none-eabi":
     
    ![Screenshot](http://i.imgur.com/Zpqj6c6.png)
-
-7. 
-
-
-
+   
+   6.5 Click Symbols under Cross GCC Compiler. Add the following symbols: PART_LM4F120H5QR, ARM_MATH_CM4, TARGET_IS_BLIZZARD_RA1:
+   
+    ![Screenshot](http://i.imgur.com/At4avr1.png)
     
+    6.6 Jump to the Includes section and add the path to Tiva libraries. It should be in "../boards/SW-TM4C-2.0.1.11577/" directory, under your home:
+   ![Screenshot](http://i.imgur.com/zhBYM9H.png)
+   
+   6.7 In the Miscellaneous section, in the Other flags: text box, you should see "-c -fmessage-length=0". To these two flags, add these all: "-mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -ffunction-sections -fdata-sections".
+   
+    ![Screenshot](http://i.imgur.com/8FSoWm7.png)
+ 
+    6.8 It's time to add Tiva driver library. Go to the Cross GCC Linker / Libraries section, "../boards/SW-TM4C-2.0.1.11577/driverlib/" prefixed by your home to the Library search path (-L) list.
 
+    ![Screenshot](http://i.imgur.com/nnlPP5w.png)
+    
+    6.9 In the Miscellaneous section add the following Linker flags: "-Wl,--static,--gc-sections,-T ../def/project.ld -mthumb -mcpu=cortex-m4 -lm -lc":
+    ![Screenshot](http://i.imgur.com/jD6o7LP.png)
+    
+    6.10 Go to the Build Steps tab, and in the Command text box inside the Post-build steps frame, type "arm-none-eabi-objcopy -O binary ${ProjName}.elf ${ProjName}.bin". Then in the Description: text box below, type "Generate binary file from elf file":
+    ![Screenshot](http://i.imgur.com/9aa8fqz.png)
+
+    6.11 Switch to the Build Artifact tab and add ".elf" to the "${ProjName}" text inside the Artifact name: text box. The resulting string should be "${ProjName}.elf". When finished, click OK:
+    
+    ![Screenshot](http://i.imgur.com/LYK9KQN.png)
+    
+    6.12 That was a long configuration, but when you click Finish, the project will be ready. You might need to advance to the next step before the Finish button becomes enabled. If that's the case, click the Next > button to advance to the next step, enter "arm-none-eabi-" in the Cross compiler prefix text box, and finally click Finish. If Eclipse asks you if it should open the C/C++ perspective, say yes. Also, if it's still opened, close the Welcome tab.
+   ![Screenshot](http://i.imgur.com/vBGn0V2.png)
+   
+   7.0 
