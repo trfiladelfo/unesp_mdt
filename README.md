@@ -125,4 +125,8 @@ Once installed MDT perform the following steps:
     Now just use your imagination and good codes.
     Url to download the installers: http://goo.gl/a1kHU2
     
+    sudo apt-get -o Dpkg::Options::="--force-overwrite" install gdb-arm-none-eabi
+
+
+    
     Thanks.
