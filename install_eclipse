@@ -1,0 +1,50 @@
+If you've downloaded Eclipse from their official website, follow these steps for the installation.
+
+    1. Extract the eclipse.XX.YY.tar.gz using
+
+    tar -zxvf eclipse.XX.YY.tar.gz
+
+    2. Become root and Copy the extracted folder to /opt
+
+    sudo mv eclipse.XX.YY /opt
+
+    3. Create a desktop file and install it:
+
+    gedit eclipse.desktop
+
+    and copy the following to the eclipse.desktop file.
+
+    [Desktop Entry]
+    Name=Eclipse 
+    Type=Application
+    Exec=env UBUNTU_MENUPROXY=0 eclipse44
+    Terminal=false
+    Icon=eclipse
+    Comment=Integrated Development Environment
+    NoDisplay=false
+    Categories=Development;IDE;
+    Name[en]=Eclipse
+
+    then execute the following command to automatically install it in the unity:
+
+    sudo desktop-file-install eclipse.desktop
+
+    4. Create a symlink in /usr/local/bin using
+
+    sudo ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse44
+
+    5. For eclipse icon to be displayed in dash, eclipse icon can be added as
+
+    sudo cp /opt/eclipse/icon.xpm /usr/share/pixmaps/eclipse.xpm
+
+    6. Give eclipse the required permissions to modify the osgi file.
+
+    sudo chown -R $USER:$USER /opt/eclipse/configuration/org.eclipse.osgi
+
+    7. Don't forget that you need to have either OpenJDK or Sun Java installed to be able to run eclipse. Check this question for more information about Java installation. Here is a simple example of installing Open JDK 1.6:
+
+    sudo apt-get install openjdk-6-jdk
+
+That's it.
+
+http://askubuntu.com/questions/26632/how-to-install-eclipse
