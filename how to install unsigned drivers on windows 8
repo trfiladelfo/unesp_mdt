@@ -1,0 +1,40 @@
+how to install unsigned drivers on windows 8
+
+ 
+so I found this post originally shared by drxman on slatedroid
+its a step by step guide on how to install unsigned drivers on windows 8. 
+
+1.move your mouse corser to the upper right part on the screen
+then select settings ->change pc settings->choose General –> Under “Advanced Startup” –> Restart now.
+
+Now the system will restart and might take some minutes to show up the boot menu. Wait for It patiently.
+
+After some time you will be prompted with a menu with following options.
+
+1. Continue
+
+2. Troubleshoot
+
+3. Turn off
+
+Choose Troubleshoot
+
+Then the following menu appears.
+
+Refresh your PC
+Reset your PC
+Advanced Options
+
+Choose Advanced Options
+
+Then the following menu appears
+
+System Restore
+System Image Recovery
+Automatic Repair
+Command Prompt
+Windows Startup settings
+Choose Windows Startup Settings, then Click Restart.
+
+Now the computer will restart and the boot menu appears. Choose “Disable Driver signature Enforcement” from the menu. Now windows will start and you can do the installation of the driver that is not signed.
+
